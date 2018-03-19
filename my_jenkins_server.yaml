@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-jenkins
-        image:  registry.eu-de.bluemix.net/connys_space/jenkins_base
+        image:  registry.eu-de.bluemix.net/YOUR_SPACE/YOUR_IMAGE_NAME
         ports:
         - containerPort: 22
         - containerPort: 8080

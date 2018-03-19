@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: my-jenkins-server
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: my-jenkins
+      labels:
+        app: my-jenkins
+      annotations:
+        discription:  this is a script driven docker based image
+    spec:
+      containers:
+      - name: my-jenkins
+        image:  registry.eu-de.bluemix.net/connys_space/jenkins_base
+        ports:
+        - containerPort: 22
+        - containerPort: 8080
+        - containerPort: 50000

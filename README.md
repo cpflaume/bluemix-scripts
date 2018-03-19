@@ -8,6 +8,7 @@ Requirements:
 - bluemix cli is installed
 
 1. Deploy a container
+
 Note: YAML files are indentation sensitive! Don't mix spaces and tabulators in yaml files.
 ```
 kubectl create --save-config -f my_jenkins_server.yaml
